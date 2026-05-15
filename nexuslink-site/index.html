@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusLink - Presale</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    .hero-bg { background: linear-gradient(135deg, #1a0033, #000000); }
+    .logo-frame {
+      background: linear-gradient(45deg, #7e22ce, #c026d3, #7e22ce);
+      padding: 16px;
+      border-radius: 9999px;
+      box-shadow: 0 0 80px rgba(168, 85, 247, 0.7);
+    }
+    section { scroll-margin-top: 90px; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-purple-900">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="text-2xl font-bold flex items-center gap-3">
+        <img src="nexuslink-hero.png" class="w-10 h-10 rounded-full" alt="Logo">
+        NexusLink
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-lg">
+        <a href="#problema" class="hover:text-purple-400 transition lang-pt">Problema</a>
+        <a href="#problema" class="hover:text-purple-400 transition lang-en hidden">Problem</a>
+        
+        <a href="#solucao" class="hover:text-purple-400 transition lang-pt">Solução</a>
+        <a href="#solucao" class="hover:text-purple-400 transition lang-en hidden">Solution</a>
+        
+        <a href="#tokenomics" class="hover:text-purple-400 transition lang-pt">Tokenomics</a>
+        <a href="#tokenomics" class="hover:text-purple-400 transition lang-en hidden">Tokenomics</a>
+        
+        <a href="#roadmap" class="hover:text-purple-400 transition lang-pt">Roadmap</a>
+        <a href="#roadmap" class="hover:text-purple-400 transition lang-en hidden">Roadmap</a>
+        
+        <a href="#team" class="hover:text-purple-400 transition lang-pt">Team</a>
+        <a href="#team" class="hover:text-purple-400 transition lang-en hidden">Team</a>
+        
+        <a href="#partners" class="hover:text-purple-400 transition lang-pt">Partners</a>
+        <a href="#partners" class="hover:text-purple-400 transition lang-en hidden">Partners</a>
+        
+        <a href="whitepaper-pt.pdf" target="_blank" class="hover:text-purple-400 transition lang-pt">Whitepaper</a>
+        <a href="whitepaper-en.pdf" target="_blank" class="hover:text-purple-400 transition lang-en hidden">Whitepaper</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button onclick="switchLanguage()" id="langBtn" class="px-6 py-2 border border-purple-500 rounded-full text-sm font-medium">EN</button>
+        <button onclick="openPresaleModal()" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-2xl font-semibold">Entrar na Presale</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center bg-purple-950 text-purple-300 text-sm px-4 py-2 rounded-full mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></span>
+          <span class="lang-pt">Presale AO VIVO</span>
+          <span class="lang-en hidden">Presale LIVE</span>
+        </div>
+        <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6 lang-pt">Conectando o que a blockchain fragmentou</h1>
+        <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6 lang-en hidden">Connecting what blockchain fragmented</h1>
+        <p class="text-2xl text-gray-300 mb-10 lang-pt">NexusLink é a camada de interoperabilidade ZK-powered para RWAs e Agentes IA autônomos.</p>
+        <p class="text-2xl text-gray-300 mb-10 lang-en hidden">NexusLink is the ZK-powered interoperability layer for RWAs and AI Agents.</p>
+        
+        <button onclick="openPresaleModal()" class="bg-white text-black px-10 py-5 rounded-2xl text-xl font-semibold hover:scale-105 transition glow">
+          <span class="lang-pt">Participar na Presale</span>
+          <span class="lang-en hidden">Join Presale</span>
+        </button>
+      </div>
+
+      <div class="hidden md:flex justify-center relative">
+        <div class="logo-frame">
+          <img src="nexuslink-hero.png" alt="NexusLink" class="w-[460px] h-[460px] object-contain rounded-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema" class="py-24 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 lang-pt">O Problema</h2>
+      <h2 class="text-5xl font-bold text-center mb-12 lang-en hidden">The Problem</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-8 rounded-3xl">
+          <h3 class="text-xl font-bold mb-3 lang-pt">Siloss de Liquidez</h3>
+          <h3 class="text-xl font-bold mb-3 lang-en hidden">Liquidity Silos</h3>
+          <p class="lang-pt">Bilhões em ativos presos em chains isoladas.</p>
+          <p class="lang-en hidden">Billions in assets trapped in isolated chains.</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-3xl">
+          <h3 class="text-xl font-bold mb-3 lang-pt">Bridges Inseguras</h3>
+          <h3 class="text-xl font-bold mb-3 lang-en hidden">Insecure Bridges</h3>
+          <p class="lang-pt">Mais de $3B perdidos em hacks.</p>
+          <p class="lang-en hidden">Over $3B lost in hacks.</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-3xl">
+          <h3 class="text-xl font-bold mb-3 lang-pt">Falta de UX Real</h3>
+          <h3 class="text-xl font-bold mb-3 lang-en hidden">Lack of Real UX</h3>
+          <p class="lang-pt">Agentes IA e RWAs precisam de interoperabilidade nativa.</p>
+          <p class="lang-en hidden">AI Agents and RWAs need native interoperability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section id="solucao" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-12 lang-pt">A Solução</h2>
+      <h2 class="text-5xl font-bold mb-12 lang-en hidden">The Solution</h2>
+      <p class="text-2xl max-w-4xl mx-auto lang-pt">NexusLink é uma camada de interoperabilidade ZK-powered que permite transferências seguras, rápidas e privadas entre qualquer blockchain.</p>
+      <p class="text-2xl max-w-4xl mx-auto lang-en hidden">NexusLink is a ZK-powered interoperability layer that enables secure, fast and private transfers between any blockchain.</p>
+    </div>
+  </section>
+
+  <!-- TOKENOMICS -->
+  <section id="tokenomics" class="py-24 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-12 lang-pt">Tokenomics</h2>
+      <h2 class="text-5xl font-bold mb-12 lang-en hidden">Tokenomics</h2>
+      <p class="text-4xl font-bold mb-8">1.000.000.000 $NXL</p>
+      <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="bg-zinc-900 p-6 rounded-3xl">40% Presale & Liquidity</div>
+        <div class="bg-zinc-900 p-6 rounded-3xl">25% Team (vested)</div>
+        <div class="bg-zinc-900 p-6 rounded-3xl">20% Ecosystem</div>
+        <div class="bg-zinc-900 p-6 rounded-3xl">15% Marketing & Development</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 lang-pt">Roadmap</h2>
+      <h2 class="text-5xl font-bold text-center mb-16 lang-en hidden">Roadmap</h2>
+      <div class="space-y-12 max-w-3xl mx-auto">
+        <div class="flex gap-8 items-center">
+          <div class="w-32 text-right font-bold text-purple-400">Q2 2026</div>
+          <div class="flex-1 bg-zinc-900 p-6 rounded-3xl">Testnet + Presale</div>
+        </div>
+        <div class="flex gap-8 items-center">
+          <div class="w-32 text-right font-bold text-purple-400">Q3 2026</div>
+          <div class="flex-1 bg-zinc-900 p-6 rounded-3xl">Mainnet Launch + ZK Bridges</div>
+        </div>
+        <div class="flex gap-8 items-center">
+          <div class="w-32 text-right font-bold text-purple-400">Q4 2026</div>
+          <div class="flex-1 bg-zinc-900 p-6 rounded-3xl">RWA Integration + AI Agents</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="py-24 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 lang-pt">A Nossa Equipa</h2>
+      <h2 class="text-5xl font-bold text-center mb-16 lang-en hidden">Our Team</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-4">
+          <h3 class="font-bold">Dr. Michael Hargrove</h3>
+          <p class="text-purple-400">CEO & Founder</p>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-4">
+          <h3 class="font-bold">Kenji Nakamura</h3>
+          <p class="text-purple-400">CTO - ZK Expert</p>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-4">
+          <h3 class="font-bold">Marcus Okoro</h3>
+          <p class="text-purple-400">Head of Blockchain</p>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-4">
+          <h3 class="font-bold">Dr. Sofia Mendes</h3>
+          <p class="text-purple-400">AI & RWA Strategist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- PARTNERS -->
+  <section id="partners" class="py-24 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-6 section-title lang-pt">Partners & Backers</h2>
+      <h2 class="text-5xl font-bold text-center mb-6 section-title lang-en hidden">Partners & Backers</h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">🔶</div><h4>BNB Chain</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">🔗</div><h4>Chainlink</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">🐂</div><h4>Pantera Capital</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">📈</div><h4>Blockchain Capital</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">a16z</div><h4>a16z Crypto</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">🌐</div><h4>Axelar</h4></div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center"><div class="text-4xl mb-4">🚀</div><h4>Ventura Capital</h4></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRESALE MODAL -->
+  <div id="presaleModal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-[100] p-4">
+    <div class="bg-zinc-900 rounded-3xl max-w-md w-full overflow-hidden">
+      <div class="p-8">
+        <button onclick="closePresaleModal()" class="text-gray-400 hover:text-white mb-6 flex items-center gap-2">← Voltar</button>
+        <h2 class="text-3xl font-bold mb-6 text-center lang-pt">Participar na Presale</h2>
+        <h2 class="text-3xl font-bold mb-6 text-center lang-en hidden">Join Presale</h2>
+        
+        <input id="email" type="email" placeholder="teu@email.com" class="w-full bg-zinc-800 p-4 rounded-2xl mb-4">
+        <div class="flex gap-3 mb-6">
+          <button onclick="selectCurrency(this)" data-currency="USDT" class="currency-btn flex-1 py-4 bg-zinc-800 hover:bg-purple-600 rounded-2xl">USDT</button>
+          <button onclick="selectCurrency(this)" data-currency="USDC" class="currency-btn flex-1 py-4 bg-zinc-800 hover:bg-purple-600 rounded-2xl">USDC</button>
+        </div>
+        <input id="amount" type="number" placeholder="Valor em USD" class="w-full bg-zinc-800 p-4 rounded-2xl mb-4" oninput="calculateTokens()">
+        <div id="tokens" class="text-center text-3xl font-bold text-purple-400 mb-8">0 $NXL</div>
+        <button onclick="confirmContribution()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 py-6 rounded-2xl text-xl font-semibold">Confirmar e Reservar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentLang = 'pt';
+
+    function switchLanguage() {
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      document.getElementById('langBtn').textContent = currentLang.toUpperCase();
+      document.querySelectorAll('.lang-pt').forEach(el => el.classList.toggle('hidden', currentLang === 'en'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', currentLang === 'pt'));
+    }
+
+    function openPresaleModal() {
+      document.getElementById('presaleModal').classList.remove('hidden');
+    }
+    function closePresaleModal() {
+      document.getElementById('presaleModal').classList.add('hidden');
+    }
+    function selectCurrency(btn) {
+      document.querySelectorAll('.currency-btn').forEach(b => b.classList.remove('bg-purple-600'));
+      btn.classList.add('bg-purple-600');
+    }
+    function calculateTokens() {
+      const amount = parseFloat(document.getElementById('amount').value) || 0;
+      document.getElementById('tokens').textContent = (amount / 0.001).toLocaleString('pt-PT') + " $NXL";
+    }
+    async function confirmContribution() {
+      alert("✅ Reserva confirmada! (Email real após deploy no Vercel)");
+      closePresaleModal();
+    }
+  </script>
+</body>
+</html>
